@@ -20,8 +20,7 @@ def calcuate():
             monthly_saved = monthly_salary * portion_saved
         current_savings = ((current_savings + monthly_saved)*(monthly_r)) + (current_savings + monthly_saved)
         months +=1
-        print(annual_salary, monthly_salary, current_savings)
-    
+          
     print(f"It took {months} months to save for your home's down payment.")
 
 
