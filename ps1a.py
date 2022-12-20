@@ -9,11 +9,11 @@ def calcuate():
 
     monthly_salary = float(annual_salary / 12)
     portion_down_payment = total_cost * 0.25
-    portion_saved = monthly_salary * portion_saved
+    monthly_saved = monthly_salary * portion_saved
     monthly_r = r/12
 
     while current_savings < portion_down_payment:
-        current_savings = ((current_savings + portion_saved)*(monthly_r)) + (current_savings + portion_saved)
+        current_savings = ((current_savings + monthly_saved)*(monthly_r)) + (current_savings + monthly_saved)
         months +=1
     
     print(f"It took {months} months to save for your home's down payment.")
